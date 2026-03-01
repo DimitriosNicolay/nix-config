@@ -9,6 +9,7 @@
     ../../modules/caddy.nix
     ../../modules/convertx.nix
     ../../modules/paperless.nix
+    ../../modules/immich.nix
   ];
 
   users.mutableUsers = false;

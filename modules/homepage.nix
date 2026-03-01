@@ -1,10 +1,14 @@
 { config, pkgs, ... }:
 
 {
+  sops.secrets."homepage-env" = {};
+
   services.homepage-dashboard = {
     enable = true;
     allowedHosts = "reavy.dev,localhost";
     openFirewall = true;
+
+    environmentFile = config.sops.secrets."homepage-env".path;
 
     settings = {
       title = "Sun - Homelab";
@@ -52,6 +56,24 @@
         ];
       }
       {
+        "Personal Cloud" = [
+          {
+            "Immich" = {
+              icon = "immich.png";
+              href = "https://immich.reavy.dev";
+              description = "Photo & Video Backup";
+              widget = {
+                type = "immich";
+                url = "http://localhost:2283"; 
+                key = "{{HOMEPAGE_VAR_IMMICH_KEY}}";
+		version = 2;
+                fields = ["photos" "videos" "storage"];
+              };
+            };
+          }
+        ];
+      }
+      {
         "Document Management" = [
           {
             "Paperless" = {
@@ -61,7 +83,7 @@
               widget = {
                 type = "paperlessngx";
                 url = "https://paperless.reavy.dev";
-                username = "reavy";
+                username = "reavy"; 
                 password = config.services.paperless.passwordFile;
               };
             };
