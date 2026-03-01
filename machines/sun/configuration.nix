@@ -10,6 +10,7 @@
     ../../modules/convertx.nix
     ../../modules/paperless.nix
     ../../modules/immich.nix
+    ../../modules/syncthing.nix
   ];
 
   users.mutableUsers = false;
