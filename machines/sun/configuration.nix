@@ -6,6 +6,7 @@
     ../../modules/homepage.nix
     ../../modules/samba.nix
     ../../modules/tailscale.nix
+    ../../modules/caddy.nix
   ];
 
   users.mutableUsers = false;

@@ -3,6 +3,9 @@
 {
   services.homepage-dashboard = {
     enable = true;
+    
+    allowedHosts = "reavy.dev, localhost";
+   
     openFirewall = true;
     settings = {
       title = "Sun - Homelab";
