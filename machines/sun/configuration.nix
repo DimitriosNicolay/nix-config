@@ -7,6 +7,8 @@
     ../../modules/samba.nix
     ../../modules/tailscale.nix
     ../../modules/caddy.nix
+    ../../modules/convertx.nix
+    ../../modules/paperless.nix
   ];
 
   users.mutableUsers = false;
