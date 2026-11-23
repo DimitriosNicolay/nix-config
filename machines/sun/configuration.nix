@@ -16,6 +16,7 @@
   ];
 
   services.hermesHQ.enable = true;
+  services.valheim.enable = false;
 
   users.mutableUsers = false;
 
