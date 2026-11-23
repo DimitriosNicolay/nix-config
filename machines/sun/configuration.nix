@@ -11,7 +11,11 @@
     ../../modules/paperless.nix
     ../../modules/immich.nix
     ../../modules/syncthing.nix
+    ../../modules/hermes.nix
+    ../../modules/gameservers
   ];
+
+  services.hermesHQ.enable = true;
 
   users.mutableUsers = false;
 
