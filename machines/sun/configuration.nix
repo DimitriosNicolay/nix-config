@@ -11,8 +11,12 @@
     ../../modules/paperless.nix
     ../../modules/immich.nix
     ../../modules/syncthing.nix
+<<<<<<< HEAD
     ../../modules/hermes.nix
     ../../modules/gameservers
+=======
+    ../../modules/valheim.nix
+>>>>>>> origin/backup/sun-before-hermes
   ];
 
   services.hermesHQ.enable = true;
