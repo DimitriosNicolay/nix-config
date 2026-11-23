@@ -68,7 +68,6 @@
     },
     "nixpkgs": {
       "locked": {
-<<<<<<< HEAD
         "lastModified": 1792502884,
         "narHash": "sha256-IoNisKcGbUjdd45qCqywGMCYmZ5EnkxezvLII0FWwNA=",
         "owner": "NixOS",
@@ -85,12 +84,8 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1771848320,
-        "narHash": "sha256-0MAd+0mun3K/Ns8JATeHT1sX28faLII5hVLq0L3BdZU=",
-=======
         "lastModified": 1789921291,
         "narHash": "sha256-Ft/BRnIqw1MywFoXydKobjjWmDFgDdYtSpJliE8+yUw=",
->>>>>>> origin/backup/sun-before-hermes
         "owner": "nixos",
         "repo": "nixpkgs",
         "rev": "44a91898084f46797b5fac650c7e8c9ac38c43d4",
