@@ -11,6 +11,7 @@
     ../../modules/paperless.nix
     ../../modules/immich.nix
     ../../modules/syncthing.nix
+    ../../modules/valheim.nix
   ];
 
   users.mutableUsers = false;

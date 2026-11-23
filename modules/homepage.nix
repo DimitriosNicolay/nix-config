@@ -8,7 +8,9 @@
     allowedHosts = "reavy.dev,localhost";
     openFirewall = true;
 
-    environmentFile = config.sops.secrets."homepage-env".path;
+    environmentFiles = [
+      (/. + config.sops.secrets."homepage-env".path)
+      ];
 
     settings = {
       title = "Sun - Homelab";
